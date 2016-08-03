@@ -4,21 +4,33 @@
 <head>
     <meta charset="utf-8">
     <title>Amanda Schuff</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- this adds Foundation Icon Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <!-- Compressed CSS -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
     <!-- Compressed JavaScript -->
     <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.7/angular-sanitize.js" charset="utf-8"></script>
 </head>
 
 <body>
     <div class="parallax-background">
+        <nav class="menu">
+            <a href="#login"><img src="images/O(white).png" alt="earth" class="homeglobe" /></a>
+            <ul class="inline-list">
+            </ul>
+            <ul class="inline-list hide-for-small-only account-action">
+                <li><a href="#login" data-reveal-id="myModal">Register</a></li>
+                <li class=""><a class="signup" href="#login" data-reveal-id="myModal">Login</a></li>
+            </ul>
+        </nav>
         <div class="intro-text">
-            Amanda Schuff
+            scroll for parallax!
             <p><i class="fi-arrow-down"></i></p>
         </div>
     </div>
@@ -26,65 +38,100 @@
     <div class="parallax-content">
         <p>Bacon ipsum dolor sit amet chicken pork loin hamburger ball tip, swine tenderloin salami meatball boudin tri-tip fatback shank bacon. Pork salami kevin, brisket spare ribs strip steak ham hock porchetta. Pork belly short loin tail porchetta. Pork
             pig meatball, beef ribs doner jerky tri-tip hamburger filet mignon strip steak ball tip ham tail tongue corned beef.</p>
-        <p>Bacon ipsum dolor sit amet chicken pork loin hamburger ball tip, swine tenderloin salami meatball boudin tri-tip fatback shank bacon. Pork salami kevin, brisket spare ribs strip steak ham hock porchetta. Pork belly short loin tail porchetta. Pork
-            pig meatball, beef ribs doner jerky tri-tip hamburger filet mignon strip steak ball tip ham tail tongue corned beef.</p>
-        <p>Bacon ipsum dolor sit amet chicken pork loin hamburger ball tip, swine tenderloin salami meatball boudin tri-tip fatback shank bacon. Pork salami kevin, brisket spare ribs strip steak ham hock porchetta. Pork belly short loin tail porchetta. Pork
-            pig meatball, beef ribs doner jerky tri-tip hamburger filet mignon strip steak ball tip ham tail tongue corned beef.</p>
 
-        <!-- Thumbnails -->
+        <p>Flank spare ribs capicola, strip steak biltong pancetta bresaola tri-tip cow landjaeger. Short ribs sirloin beef ribs, flank capicola ribeye turducken. Sirloin boudin andouille tail. Ham flank tail sausage t-bone, jerky landjaeger kevin porchetta
+            ground round pork belly.</p>
+
+        <p>Pork loin doner biltong shoulder meatball flank. Sirloin shankle ground round tail, short loin prosciutto beef ribs salami pork pancetta kielbasa. Brisket spare ribs jerky filet mignon flank. Turducken ham sausage pork loin salami. Ball tip meatloaf
+            shank pancetta hamburger meatball. Jowl beef pork loin tenderloin turducken, pastrami capicola filet mignon ham hock pork belly t-bone jerky ball tip kevin.</p>
+
+        <p>Filet mignon shank pastrami pork loin ham jerky corned beef chuck drumstick ribeye prosciutto pork belly tail. Beef leberkas brisket ham hock tenderloin tail tri-tip pork chop. Corned beef boudin andouille tail fatback chicken strip steak biltong
+            pancetta pork loin tri-tip landjaeger pastrami kevin. Tongue spare ribs kevin ribeye shoulder swine.</p>
+
+        <p>Chicken kielbasa swine ham hock filet mignon strip steak bacon fatback pork t-bone. Ground round shankle tongue, jowl flank spare ribs beef leberkas ham boudin shank capicola short ribs. Drumstick pork loin turkey pork chop salami andouille pork
+            belly. Short loin tongue tri-tip, hamburger filet mignon pastrami doner shoulder turkey ball tip t-bone jerky ham chicken.</p>
+
+        <p>Ground round flank pork loin salami, cow biltong hamburger swine brisket tongue tenderloin drumstick meatball. Biltong tongue salami ham shankle, leberkas meatloaf sirloin ball tip. Pork loin pastrami spare ribs beef capicola sausage kevin filet
+            mignon pork chop. Bacon jerky turkey shoulder cow capicola ball tip shank. Ham tongue tail tri-tip kielbasa ham hock frankfurter meatball cow brisket. Shankle sausage filet mignon biltong pork loin. Short ribs spare ribs chuck pig meatloaf
+            shoulder cow tail brisket biltong ball tip ham hock.</p>
+
         <div class="row">
+            <div class="small-4 columns">
 
-            <div class="large-3 small-6 columns">
-                <img src="http://placehold.it/250x250&text=Thumbnail" />
-                <h6 class="panel">Description</h6>
+                <div class="image-wrapper overlay-fade-in">
+
+                    <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+
+                    <div class="image-overlay-content">
+                        <h2>.overlay-fade-in</h2>
+                        <p class="price">$99.99</p>
+                        <a href="#" class="button">Get it</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="small-4 columns">
+
+                <div class="image-wrapper overlay-fade-in">
+
+                    <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+
+                    <div class="image-overlay-content">
+                        <h2>.overlay-fade-in</h2>
+                        <p class="price">$99.99</p>
+                        <a href="#" class="button">Get it</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="small-4 columns">
+
+                <div class="image-wrapper overlay-fade-in">
+
+                    <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+
+                    <div class="image-overlay-content">
+                        <h2>.overlay-fade-in</h2>
+                        <p class="price">$99.99</p>
+                        <a href="#" class="button">Get it</a>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="large-3 small-6 columns">
-                <img src="http://placehold.it/250x250&text=Thumbnail" />
-                <h6 class="panel">Description</h6>
-            </div>
-
-            <div class="large-3 small-6 columns">
-                <img src="http://placehold.it/250x250&text=Thumbnail" />
-                <h6 class="panel">Description</h6>
-            </div>
         </div>
-        <!-- End Thumbnails -->
-
         <footer class="footer">
-      <div class="row">
-        <div class="small-12 medium-6 large-5 columns">
-          <p class="logo"><i class="fi-shield"></i> STARWARS</p>
-          <p class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">Pricing</a>
-            <a href="#">About</a>
-            <a href="#">Faq</a>
-            <a href="#">Contact</a>
-          </p>
-          <p class="copywrite">Copywrite not copywrite © 2015</p>
-        </div>
-        <div class="small-12 medium-6 large-4 columns">
-          <ul class="contact">
-            <li><p><i class="fi-marker"></i>1595 Spring Street New Britain, CT 06051</p></li>
-            <li><p><i class="fi-telephone"></i>+1-656-453-9966</p></li>
-            <li><p><i class="fi-mail"></i>contact@emperor.com</p></li>
-          </ul>
-        </div>
-        <div class="small-12 medium-12 large-3 columns">
-          <p class="about">About Star Wars</p>
-          <p class="about subheader">Strike me down, and I will become more powerful than you could possibly imagine.</p>
-          <ul class="inline-list social">
-            <a href="#"><i class="fi-social-facebook"></i></a>
-            <a href="#"><i class="fi-social-twitter"></i></a>
-            <a href="#"><i class="fi-social-linkedin"></i></a>
-            <a href="#"><i class="fi-social-github"></i></a>
-          </ul>
-        </div>
-      </div>
-    </footer>
+            <div class="row">
+                <div class="small-12 columns">
+                    <p class="slogan">Finger-lickin' good</p>
+                    <p class="links">
+                        <a href="#">Home</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">About</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact</a>
+                    </p>
+                    <p class="copywrite">Copywrite not copypwrite © 2015</p>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+        $(function() {
+            $(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
+                $(".top-bar").toggleClass("top-bar-close");
+                $(".middle-bar").toggleClass("middle-bar-close");
+                $(".bottom-bar").toggleClass("bottom-bar-close");
+            });
+        });
+    </script>
 </body>
 
 </html>

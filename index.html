@@ -21,9 +21,9 @@
 
 <body>
     <div class="parallax-background">
-        <nav class="menu">
+        <nav class="menu" id="navMenu">
             <ul class="inline-list hide-for-small-only account-action">
-                <li>Connect: </li>
+                <li><a href="#">Resume</a></li>
                 <li><a href="https://github.com/aschuff"><i class="fi-social-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/aschuff"><i class="fi-social-linkedin"></i></a></li>
                 <li><a href="https://twitter.com/aschuff15"><i class="fi-social-twitter"></i></a></li>
@@ -31,80 +31,77 @@
         </nav>
         <div class="intro-text">
             Amanda M. Schuff
+            <br>
+            <h2>Front End Developer</h2>
             <p><i class="fi-arrow-down"></i></p>
         </div>
     </div>
 
     <div class="parallax-content">
-        <h2>About</h2>
-        <p>I have a passion for {code}and a strong appreciation for /design/. I am loving AngularJS, Foundation, and Gulp but I also have experience with BackboneJS, jQuery, and HTML5/CSS3. I'm looking to keep breaking ground in the Dev world and I'm excited
-            about the opportunities ahead. If you'd like to hear more, let's <a href="">connect</a>.</p>
-
-        <h2>My Work</h2>
-        <div class="row">
-            <div class="small-4 columns">
-
-                <div class="image-wrapper overlay-fade-in">
-
-                    <img src="images/Lingo.jpg" />
-
-                    <div class="image-overlay-content">
-                        <h2>Lingo</h2>
-                        <a href="#" class="button">Check it</a>
-                    </div>
-                </div>
-            </div>
-            <div class="small-4 columns">
-
-                <div class="image-wrapper overlay-fade-in">
-
-                    <img src="images/Gridland.jpg" />
-
-                    <div class="image-overlay-content">
-                        <h2>Gridland (Backbone)</h2>
-                        <a href="#" class="button">Check it</a>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="small-4 columns">
-
-                <div class="image-wrapper overlay-fade-in">
-
-                    <img src="images/SkaterSite.jpg" />
-
-                    <div class="image-overlay-content">
-                        <h2>Sk8Site</h2>
-                        <a href="#" class="button">Check it</a>
-                    </div>
-                </div>
-            </div>
+        <div class="about">
+            <h2>About</h2>
+            <p>I have a passion for {code} and a strong appreciation for /design/. I am loving AngularJS, Foundation, and HTML5/CSS3 but I also have experience with BackboneJS and jQuery. I'm looking to keep breaking ground in the Dev world and I'm excited
+                about the opportunities ahead. If you'd like to hear more, let's <a href="">connect</a>.</p>
+        </div>
+        <div class="myWork">
+            <h2>My Work</h2>
             <div class="row">
-              <h2>Tech I love</h2>
-                <div class="small-6 large-2 columns">
-                      <img src="images/html5.png" alt="" />
-                      <img src="images/css3.png" alt="" />
-                      <img src="images/sass.svg" alt="" />
-                      <img src="images/foundation.png" alt="" />
-                      <img src="images/angular.png" alt="" />
-                      <img src="images/gulp.png" alt="" />
-                      <img src="images/node.png" alt="" />
+                <div class="small-4 columns">
+                    <div class="image-wrapper overlay-fade-in">
+                        <img src="images/Lingo.jpg" />
+                        <div class="image-overlay-content">
+                            <h2>Lingo</h2>
+                            <a href="#" class="button">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="image-wrapper overlay-fade-in">
+                        <img src="images/Gridland.jpg" />
+                        <div class="image-overlay-content">
+                            <h2>Gridland</h2>
+                            <a href="https://five-chair.surge.sh" class="button">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="image-wrapper overlay-fade-in">
+                        <img src="images/SkaterSite.jpg" />
+                        <div class="image-overlay-content">
+                            <h2>Sk8Site</h2>
+                            <a href="https://dramatic-invention.surge.sh" class="button">Demo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="row">
-                <div class="small-12 columns">
-                    <p class="slogan">Amanda M. Schuff</p>
-                    <p class="links">
-                        <a href="https://github.com/aschuff"><i class="fi-social-github"></i></a>
-                        <a href="https://www.linkedin.com/in/aschuff"><i class="fi-social-linkedin"></i></a>
-                        <a href="https://twitter.com/aschuff15"><i class="fi-social-twitter"></i></a>
-                    </p>
-                </div>
+
+        <div class="row" id="tech">
+            <h2>Tech I love</h2>
+            <ul class="medium-block-grid-6">
+                <li><img class="techIcons" id="html5" src="images/html5.png" alt="" /></li>
+                <li><img class="techIcons" id="css3" src="images/css3.png" alt="" /></li>
+                <li><img class="techIcons" id="sass" src="images/sass.svg" alt="" /></li>
+                <li><img class="techIcons" id="foundation" src="images/foundation1.svg" alt="" /></li>
+                <li><img class="techIcons" id="bootstrap" src="images/bootstrap.png" alt="" /></li>
+                <li><img class="techIcons" id="angular" src="images/angular.png" alt="" /></li>
+                <li><img class="techIcons" id="gulp" src="images/gulp.png" alt="" /></li>
+                <li><img class="techIcons" id="node" src="images/node.png" alt="" /></li>
+            </ul>
+        </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="small-12 columns">
+                <p class="slogan">Amanda M. Schuff</p>
+                <p class="links">
+                    <a href="https://github.com/aschuff"><i class="fi-social-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aschuff"><i class="fi-social-linkedin"></i></a>
+                    <a href="https://twitter.com/aschuff15"><i class="fi-social-twitter"></i></a>
+                </p>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>

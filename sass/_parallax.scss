@@ -29,4 +29,62 @@ body {
   padding: 50px;
   font-size: 20px;
   background-color: #fff;
+    h2 {
+      font-weight: bold;
+    }
+    p {
+      font-size: xx-large;
+    }
+    ul {
+      list-style-type: none;
+      display: inline-flex;
+      margin-top: 1%;
+      width: 71%;
+      margin-left: 18%;
+        li {
+
+        }
+    }
+    // .techIcons {
+    //   max-width: 40%;
+    // }
+    #html5 {
+      border-right: solid gray 1px;
+    }
+    #css3 {
+      border-right: solid gray 1px;
+    }
+    #sass {
+      max-width: 64%;
+      margin-left: 7%;
+    }
+    #foundation {
+      max-width: 100%;
+      margin-left: 24%;
+      border-right: solid gray 1px;
+    }
+    #bootstrap {
+      max-width: 38%;
+      margin-left: 15%;
+    }
+    #angular {
+      max-width: 48%;
+      border-right: solid gray 1px;
+    }
+    #gulp {
+      max-width: 31%;
+      border-right: solid gray 1px;
+    }
+    #node {
+      max-width: 33%;
+    }
+    .about {
+      border-bottom: solid #BCBDB8 1px;
+    }
+    .myWork {
+      border-bottom: solid #BCBDB8 1px;
+    }
+    #tech {
+      border-bottom: solid #BCBDB8 1px;
+    }
 }

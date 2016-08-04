@@ -9,10 +9,10 @@ $primary-color: #87D37C;
   max-width: 100%;
 }
 
-.menu {
+#navMenu {
   background-color: $background-color;
   padding: 1.5rem 3rem;
-  height: auto;
+  height: 5%;
 
   .inline-list {
     text-align: center;

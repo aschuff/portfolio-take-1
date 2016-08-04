@@ -5,45 +5,45 @@ body * {
 .row {
   max-width: 100%; }
 
-.menu {
+#navMenu {
   background-color: #292c2f;
   padding: 1.5rem 3rem;
-  height: auto; }
-  .menu .inline-list {
+  height: 5%; }
+  #navMenu .inline-list {
     text-align: center; }
-    .menu .inline-list li {
+    #navMenu .inline-list li {
       float: none;
       display: inline-block; }
-    .menu .inline-list a {
+    #navMenu .inline-list a {
       color: #fff;
       padding-bottom: 0.5rem; }
-      .menu .inline-list a:hover {
+      #navMenu .inline-list a:hover {
         color: #87D37C;
         transition: all .3s ease-in-out; }
-    .menu .inline-list .active a {
+    #navMenu .inline-list .active a {
       color: #87D37C; }
-  .menu .account {
+  #navMenu .account {
     position: absolute;
     top: 3%;
     right: 3%; }
-    .menu .account a, .menu .account i {
+    #navMenu .account a, #navMenu .account i {
       color: #fff; }
   @media only screen and (min-width: 40.063em) {
-    .menu {
+    #navMenu {
       height: 5rem; }
-      .menu .inline-list {
+      #navMenu .inline-list {
         float: left;
         margin: 0 0 0 1.5rem; }
-      .menu a:hover {
+      #navMenu a:hover {
         border-bottom: 2px solid #87D37C; } }
-  .menu .account-action {
+  #navMenu .account-action {
     float: right;
     margin: -.75rem 0 0 0; }
-    .menu .account-action li {
+    #navMenu .account-action li {
       margin-left: .2rem; }
-    .menu .account-action a {
+    #navMenu .account-action a {
       padding: 0.75rem 1rem; }
-    .menu .account-action a.signup {
+    #navMenu .account-action a.signup {
       font-weight: bold;
       background-color: #3d4146;
       border-radius: 3px; }
@@ -289,3 +289,41 @@ body {
   padding: 50px;
   font-size: 20px;
   background-color: #fff; }
+  .parallax-content h2 {
+    font-weight: bold; }
+  .parallax-content p {
+    font-size: xx-large; }
+  .parallax-content ul {
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 1%;
+    width: 71%;
+    margin-left: 18%; }
+  .parallax-content #html5 {
+    border-right: solid gray 1px; }
+  .parallax-content #css3 {
+    border-right: solid gray 1px; }
+  .parallax-content #sass {
+    max-width: 64%;
+    margin-left: 7%; }
+  .parallax-content #foundation {
+    max-width: 100%;
+    margin-left: 24%;
+    border-right: solid gray 1px; }
+  .parallax-content #bootstrap {
+    max-width: 38%;
+    margin-left: 15%; }
+  .parallax-content #angular {
+    max-width: 48%;
+    border-right: solid gray 1px; }
+  .parallax-content #gulp {
+    max-width: 31%;
+    border-right: solid gray 1px; }
+  .parallax-content #node {
+    max-width: 33%; }
+  .parallax-content .about {
+    border-bottom: solid #BCBDB8 1px; }
+  .parallax-content .myWork {
+    border-bottom: solid #BCBDB8 1px; }
+  .parallax-content #tech {
+    border-bottom: solid #BCBDB8 1px; }

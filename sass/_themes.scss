@@ -21,9 +21,8 @@ $primary-color: #87D37C;
       float: none;
       display: inline-block;
     }
-
     a {
-      color: #fff;
+      color: #0CBBC0;
       padding-bottom: 0.5rem;
 
       &:hover {
@@ -31,12 +30,10 @@ $primary-color: #87D37C;
         transition: all .3s ease-in-out;
       }
     }
-
     .active a {
       color: $primary-color;
     }
   }
-
   .account {
     position: absolute;
     top: 3%;
@@ -103,7 +100,7 @@ $primary-color: #87D37C;
   padding: 4rem;
   p {
     &.slogan {
-      color: #8d9093;
+      color: #0CBBC0;
       font-size: 1.8rem;
       margin: 0 0 1rem;
     }

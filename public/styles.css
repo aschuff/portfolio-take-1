@@ -15,7 +15,7 @@ body * {
       float: none;
       display: inline-block; }
     #navMenu .inline-list a {
-      color: #fff;
+      color: #0CBBC0;
       padding-bottom: 0.5rem; }
       #navMenu .inline-list a:hover {
         color: #87D37C;
@@ -67,7 +67,7 @@ body * {
   font-size: 1.2rem;
   padding: 4rem; }
   .footer p.slogan {
-    color: #8d9093;
+    color: #0CBBC0;
     font-size: 1.8rem;
     margin: 0 0 1rem; }
   .footer p.copywrite {
@@ -131,16 +131,18 @@ body * {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
-  background: #FFF;
+  background: #0CBBC0;
   color: #222;
   text-transform: uppercase;
   box-shadow: 0 0 1px #000;
   position: relative;
   border: 1px solid #999;
+  border-radius: 5%;
   opacity: 0;
   transition: all 0.2s ease-in-out; }
   .overlay-fade-in .button:hover {
-    box-shadow: 0 0 5px #000; }
+    box-shadow: 0 0 5px #000;
+    color: #FFF; }
 
 .overlay-fade-in:hover img {
   transform: scale(1.2); }
@@ -289,41 +291,65 @@ body {
   padding: 50px;
   font-size: 20px;
   background-color: #fff; }
-  .parallax-content h2 {
-    font-weight: bold; }
   .parallax-content p {
     font-size: xx-large; }
+  .parallax-content #connect {
+    color: #0CBBC0; }
   .parallax-content ul {
     list-style-type: none;
     display: inline-flex;
     margin-top: 1%;
     width: 71%;
     margin-left: 18%; }
+  .parallax-content h2 {
+    color: #0CBBC0;
+    margin-top: 2%; }
+  .parallax-content .projectDescription {
+    color: #CDDFDF; }
+  .parallax-content .small-4.columns {
+    margin-bottom: 3%;
+    margin-top: 2%; }
+    .parallax-content .small-4.columns #lingo {
+      height: 12em; }
+    .parallax-content .small-4.columns #skate {
+      height: 12em; }
   .parallax-content #html5 {
-    border-right: solid gray 1px; }
+    border-right: solid #0CBBC0 1px; }
   .parallax-content #css3 {
-    border-right: solid gray 1px; }
+    border-right: solid #0CBBC0 1px;
+    margin-left: 10%;
+    max-width: 50%; }
+  .parallax-content #javascript {
+    max-width: 124%;
+    margin-left: -70%; }
   .parallax-content #sass {
     max-width: 64%;
-    margin-left: 7%; }
+    margin-left: 52%;
+    border-right: solid #0CBBC0 1px; }
   .parallax-content #foundation {
     max-width: 100%;
-    margin-left: 24%;
-    border-right: solid gray 1px; }
+    margin-left: 50%;
+    border-right: solid #0CBBC0 1px; }
   .parallax-content #bootstrap {
     max-width: 38%;
-    margin-left: 15%; }
+    margin-left: 24%; }
   .parallax-content #angular {
     max-width: 48%;
-    border-right: solid gray 1px; }
+    margin-left: 10%;
+    border-right: solid #0CBBC0 1px; }
   .parallax-content #gulp {
-    max-width: 31%;
-    border-right: solid gray 1px; }
+    margin-left: -40%;
+    max-width: 47%;
+    border-right: solid #0CBBC0 1px; }
   .parallax-content #node {
-    max-width: 33%; }
+    margin-left: -138%;
+    max-width: 65%; }
   .parallax-content .about {
-    border-bottom: solid #BCBDB8 1px; }
+    border-bottom: solid #0CBBC0 1px; }
   .parallax-content .myWork {
-    border-bottom: solid #BCBDB8 1px; }
+    border-bottom: solid #0CBBC0 1px; }
   .parallax-content #tech {
-    border-bottom: solid #BCBDB8 1px; }
+    border-bottom: solid #0CBBC0 1px;
+    margin-bottom: 5%; }
+    .parallax-content #tech ul.medium-block-grid-6 {
+      margin-bottom: 5%; }

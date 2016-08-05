@@ -55,17 +55,19 @@ $global-radius: 4px;
     display: inline-block;
     text-decoration: none;
     padding: 7px 14px;
-    background: #FFF;
+    background: #0CBBC0;
     color: #222;
     text-transform: uppercase;
     box-shadow: 0 0 1px #000;
     position: relative;
     border: 1px solid #999;
+    border-radius: 5%;
     opacity: 0;
     transition: all 0.2s ease-in-out;
 
     &:hover {
       box-shadow: 0 0 5px #000;
+      color: #FFF;
     }
   }
 

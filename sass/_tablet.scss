@@ -1,10 +1,44 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
  .parallax-background {
+   nav#navMenu.menu {
+     padding: 2rem 7rem;
+   }
    #navMenu .account-action {
      margin: -.75rem 0 0 -6rem;
+     a#resume {
+       font-size: x-large;
+     }
+      li.navList {
+          width: 19%;
+            img#navIcons {
+                  max-width: 12%;
+            }
+      }
+      li#email.navList {
+        font-size: x-large;
+      }
    }
  }
  .parallax-content {
-
+   div.image-wrapper.overlay-fade-in {
+     img#lingo {
+        height: 10em;
+     }
+     img#gridland {
+        height: 10em;
+     }
+     img#skate {
+        height: 10em;
+     }
+   }
+   footer.footer {
+      padding: 1rem;
+     p.email {
+       font-size: 1.4rem;
+     }
+     img.footerImg {
+       max-width: 3%;
+     }
+   }
  }
 }

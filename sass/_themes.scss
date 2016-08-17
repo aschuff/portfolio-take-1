@@ -17,41 +17,32 @@ $primary-color: #0CBBC0;
   .inline-list {
     text-align: center;
 
-    li {
+    li.navList {
       float: none;
       display: inline-block;
       color: #FFF;
-    }
-    img#navIcons {
-      max-width: 8%;
-      color: #FFF;
-    }
-    a {
-      color: #FFF;
-      padding-bottom: 0.5rem;
+      a {
+        color: #FFF;
+        padding-bottom: 0.5rem;
 
-      &:hover {
-        color: $primary-color;
-        transition: all .3s ease-in-out;
+        &:hover {
+          color: $primary-color;
+          transition: all .3s ease-in-out;
+        }
+      #navIcons {
+          max-width: 8%;
+          color: #FFF;
       }
     }
-    .active a {
-      color: $primary-color;
-    }
   }
+}
   .account {
     position: absolute;
     top: 3%;
     right: 3%;
-
-    a , i {
-      color: $primary-color;
-    }
   }
-
   .account-action {
     margin: -.75rem 0 0 5rem;
-
   }
 }
 

@@ -19,8 +19,30 @@
       margin-left: 11%; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .parallax-background nav#navMenu.menu {
+    padding: 2rem 7rem; }
   .parallax-background #navMenu .account-action {
-    margin: -.75rem 0 0 -6rem; } }
+    margin: -.75rem 0 0 -6rem; }
+    .parallax-background #navMenu .account-action a#resume {
+      font-size: x-large; }
+    .parallax-background #navMenu .account-action li.navList {
+      width: 19%; }
+      .parallax-background #navMenu .account-action li.navList img#navIcons {
+        max-width: 12%; }
+    .parallax-background #navMenu .account-action li#email.navList {
+      font-size: x-large; }
+  .parallax-content div.image-wrapper.overlay-fade-in img#lingo {
+    height: 10em; }
+  .parallax-content div.image-wrapper.overlay-fade-in img#gridland {
+    height: 10em; }
+  .parallax-content div.image-wrapper.overlay-fade-in img#skate {
+    height: 10em; }
+  .parallax-content footer.footer {
+    padding: 1rem; }
+    .parallax-content footer.footer p.email {
+      font-size: 1.4rem; }
+    .parallax-content footer.footer img.footerImg {
+      max-width: 3%; } }
 
 body * {
   font-family: 'Shadows Into Light', cursive; }
@@ -34,27 +56,23 @@ body * {
   height: 12%; }
   #navMenu .inline-list {
     text-align: center; }
-    #navMenu .inline-list li {
+    #navMenu .inline-list li.navList {
       float: none;
       display: inline-block;
       color: #FFF; }
-    #navMenu .inline-list img#navIcons {
-      max-width: 8%;
-      color: #FFF; }
-    #navMenu .inline-list a {
-      color: #FFF;
-      padding-bottom: 0.5rem; }
-      #navMenu .inline-list a:hover {
-        color: #0CBBC0;
-        transition: all .3s ease-in-out; }
-    #navMenu .inline-list .active a {
-      color: #0CBBC0; }
+      #navMenu .inline-list li.navList a {
+        color: #FFF;
+        padding-bottom: 0.5rem; }
+        #navMenu .inline-list li.navList a:hover {
+          color: #0CBBC0;
+          transition: all .3s ease-in-out; }
+        #navMenu .inline-list li.navList a #navIcons {
+          max-width: 8%;
+          color: #FFF; }
   #navMenu .account {
     position: absolute;
     top: 3%;
     right: 3%; }
-    #navMenu .account a, #navMenu .account i {
-      color: #0CBBC0; }
   #navMenu .account-action {
     margin: -.75rem 0 0 5rem; }
 

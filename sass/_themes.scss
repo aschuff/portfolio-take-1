@@ -3,7 +3,7 @@ body * {
 }
 // NAV //
 $background-color: #292c2f;
-$primary-color: #87D37C;
+$primary-color: #0CBBC0;
 
 .row {
   max-width: 100%;
@@ -11,8 +11,8 @@ $primary-color: #87D37C;
 
 #navMenu {
   background-color: $background-color;
-  padding: 1.5rem 3rem;
-  height: 5%;
+  padding: 2rem 3rem;
+  height: 12%;
 
   .inline-list {
     text-align: center;
@@ -20,9 +20,14 @@ $primary-color: #87D37C;
     li {
       float: none;
       display: inline-block;
+      color: #FFF;
+    }
+    img#navIcons {
+      max-width: 8%;
+      color: #FFF;
     }
     a {
-      color: #0CBBC0;
+      color: #FFF;
       padding-bottom: 0.5rem;
 
       &:hover {
@@ -40,55 +45,13 @@ $primary-color: #87D37C;
     right: 3%;
 
     a , i {
-      color: #fff;
-    }
-  }
-
-  @media only screen and (min-width: 40.063em) {
-  height: 5rem;
-
-  .inline-list {
-    float: left;
-    margin: 0 0 0 1.5rem;
-    }
-
-    a:hover {
-      border-bottom: 2px solid $primary-color;
+      color: $primary-color;
     }
   }
 
   .account-action {
-    float: right;
-    margin: -.75rem 0 0 0;
+    margin: -.75rem 0 0 5rem;
 
-    li {
-      margin-left: .2rem;
-    }
-
-    a { padding: 0.75rem 1rem;}
-
-    a.signup {
-      font-weight: bold;
-      background-color: scale-color($background-color, $lightness: 10%);
-      border-radius: 3px;
-    }
-  }
-}
-
-.name {
-  text-align: center;
-  font-size:  1.5rem;
-  line-height: 1;
-  margin: 0 0 1rem 0;
-  color: #fff;
-
-  i {
-    color: $primary-color;
-    margin-right: 0.5rem;
-  }
-
-  @media only screen and (min-width: 40.063em) {
-    float: left;
   }
 }
 
@@ -101,8 +64,15 @@ $primary-color: #87D37C;
   p {
     &.slogan {
       color: #0CBBC0;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       margin: 0 0 1rem;
+    }
+    &.email {
+      color: #0CBBC0;
+      font-size: 1.2rem;
+    }
+    &.links {
+      margin-left: 2%;
     }
     &.copywrite {
       color: #8f9296;
@@ -110,11 +80,14 @@ $primary-color: #87D37C;
       margin: 0;
     }
   }
+  .footerImg {
+    max-width: 2%;
+  }
   .links a {
     list-style: none;
     font-weight: bold;
     color: #ffffff;
-    padding: 3rem 0 2rem;
+    padding: 0rem 0 1rem;
     margin: 0;
     &::after {
       content: "•";

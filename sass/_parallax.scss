@@ -13,13 +13,16 @@ body {
   background-size: cover;
   position: fixed;
   width: 100%;
+  #arrow {
+    color: #FFF;
+  }
 }
 
 .intro-text {
-  font-size: 50px;
+  font-size: 4em;
   color: #fff;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 7%;
 }
 
 .parallax-content {

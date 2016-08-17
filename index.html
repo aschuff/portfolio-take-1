@@ -6,14 +6,10 @@
     <title>Amanda M. Schuff</title>
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <!-- this adds Foundation Icon Fonts -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <!-- Compressed CSS -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
     <!-- Compressed JavaScript -->
     <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
-    <script src='https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css'></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,17 +17,18 @@
     <div class="parallax-background">
         <nav class="menu" id="navMenu">
             <ul class="inline-list hide-for-small-only account-action">
-                <li class="navList"><a href="files/Resume.pdf">Resume</a></li>
-                <li class="navList"><a href="https://github.com/aschuff"><i class="fi-social-github"></i></a></li>
-                <li class="navList"><a href="https://www.linkedin.com/in/aschuff"><i class="fi-social-linkedin"></i></a></li>
-                <li class="navList"><a href="https://twitter.com/aschuff15"><i class="fi-social-twitter"></i></a></li>
+                <li class="navList"><a id="resume" href="files/Resume.pdf" target="_blank">Resume</a></li>
+                <li class="navList" ><a href="https://github.com/aschuff" target="_blank"><img id="navIcons" src="images/github.png" alt="" /></a></li>
+                <li class="navList"><a href="https://www.linkedin.com/in/aschuff" target="_blank"><img id="navIcons" src="images/linkedin.png" alt="" /></a></li>
+                <li class="navList"><a href="https://twitter.com/aschuff15" target="_blank"><img id="navIcons" src="images/twitter.png" alt="" /></a></li>
+                <li class="navList" id="email">amandaschuff15@gmail.com</li>
             </ul>
         </nav>
         <div class="intro-text">
             Amanda M. Schuff
             <br>
             <h2>Front End Developer</h2>
-            <p><i class="fi-arrow-down"></i></p>
+            <p id="arrow">&#8671;</p>
         </div>
     </div>
 
@@ -39,7 +36,7 @@
         <div class="about">
             <h2>About Me</h2>
             <p>I have a passion for {code} and /design/. I am loving AngularJS, Foundation, and HTML5/CSS3 but I also have experience with BackboneJS and jQuery. I'm looking to keep breaking ground in the Dev world and I'm excited
-                about the opportunities ahead. If you'd like to hear more, let's <a id="connect" href="https://www.linkedin.com/in/aschuff">connect</a>.</p>
+                about the opportunities ahead. If you'd like to hear more, let's <a id="connect" href="https://www.linkedin.com/in/aschuff" target="_blank">connect</a>.</p>
         </div>
         <div class="myWork">
             <h2>My Work</h2>
@@ -52,7 +49,7 @@
                             <p class="projectDescription">
                               AngularJS & Foundation
                             </p>
-                            <a href="https://tightfisted-operation.surge.sh/" class="button">Demo</a>
+                            <a href="http://skoorc.com:54646/#/home" class="button" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +61,7 @@
                             <p class="projectDescription">
                               BackboneJS & Gulp
                             </p>
-                            <a href="https://learned-beginner.surge.sh/" class="button">Demo</a>
+                            <a href="https://learned-beginner.surge.sh/" class="button" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +73,7 @@
                             <p class="projectDescription">
                               HTML5 & CSS3
                             </p>
-                            <a href="https://dramatic-invention.surge.sh" class="button">Demo</a>
+                            <a href="https://dramatic-invention.surge.sh" class="button" target="_blank">Demo</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +81,7 @@
         </div>
 
         <div class="row" id="tech">
-            <h2>Tech I Use</h2>
+            <h2>Tech @ Work</h2>
             <ul class="medium-block-grid-6">
                 <li><img class="techIcons" id="html5" src="images/html5.png" alt="" /></li>
                 <li><img class="techIcons" id="css3" src="images/css3.png" alt="" /></li>
@@ -102,10 +99,11 @@
         <div class="row">
             <div class="small-12 columns">
                 <p class="slogan">Amanda M. Schuff</p>
+                <p class="email">amandaschuff15@gmail.com</p>
                 <p class="links">
-                    <a href="https://github.com/aschuff"><i class="fi-social-github"></i></a>
-                    <a href="https://www.linkedin.com/in/aschuff"><i class="fi-social-linkedin"></i></a>
-                    <a href="https://twitter.com/aschuff15"><i class="fi-social-twitter"></i></a>
+                    <a href="https://github.com/aschuff" target="_blank"><img class="footerImg" src="images/github.png" alt="" /></i></a>
+                    <a href="https://www.linkedin.com/in/aschuff" target="_blank"><img class="footerImg" src="images/linkedin.png" alt="" /></i></a>
+                    <a href="https://twitter.com/aschuff15" target="_blank"><img class="footerImg" src="images/twitter.png" alt="" /></i></a>
                 </p>
             </div>
         </div>

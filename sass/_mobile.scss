@@ -1,16 +1,23 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 675px) {
-  .parallax-background {
+  div.parallax-background {
+    height: 26em;
+    nav#navMenu.menu {
+      height: 16%;
+    }
     #navMenu .account-action {
-      margin: -.75rem 0 0 -4rem;
-    }
-    img#navIcons {
-      max-width: 15%;
-    }
-    li.navList {
-      width: 15%;
+      margin: -.75rem 0 0 -8rem;
+      li.navList {
+        font-size: 1.5em;
+        width: 12%;
+        a {
+          #navIcons {
+            max-width: 1em;
+          }
+        }
+      }
     }
     .intro-text {
-    font-size: 5em;
+    font-size: 4.8em;
       h2 {
         font-size: 3.5rem;
       }
@@ -18,14 +25,98 @@
   }
   div.parallax-content {
     font-size: 14px;
-    p {
-      font-size: x-large;
+    h2 {
+      font-size: 5em;
     }
+    h3  {
+      font-size: 4em;
+      text-align: center;
+      font-weight: bold;
+      color: #0CBBC0;
+    }
+    p.aboutMe {
+      font-size: 2.8em;
+    }
+    p.projectDescriptions {
+      font-size: 2.8em;
+    }
+    .myWork {
+      margin-top: 6%;
+    }
+    .small-4.columns {
+      width: 98%;
+      #lingo {
+        width: 100%;
+        height: 27em;
+      }
+      #gridland {
+        width: 100%;
+        height: 27em;
+      }
+      #skate {
+        width: 100%;
+        height: 27em;
+      }
+    }
+
     div#tech.row {
       ul.medium-block-grid-6 {
         width: 92%;
-        margin-left: 11%;
+        margin-left: 13%;
+        margin-top: 5%;
+            #html5 {
+              max-width: 5em;
+              border-right: none;
+            }
+            #css3 {
+              max-width: 3.7em;
+              border-right: none;
+            }
+            #javascript {
+              max-width: 3.6em;
+              margin-left: 37%;
+            }
+            #sass {
+              max-width: 5em;
+              margin-top: 18%;
+              border-right: none;
+            }
+            #foundation {
+              max-width: 5em;
+              margin-left: 68%;
+              border-right: none;
+            }
+            #bootstrap {
+              max-width: 5em;
+              margin-left: 81%;
+            }
+            #angular {
+              border-right: none;
+              margin-left: 95%;
+              max-width: 5em;
+            }
+            #gulp {
+              border-right: none;
+              max-width: 6em;
+              margin-left: 66%;
+            }
+            #node {
+              max-width: 6em;
+              margin-left: 40%;
+            }
       }
+    }
+    .footer {
+      padding: 1rem;
+        p.slogan {
+            font-size: 2.5rem;
+          }
+        p.email {
+          font-size: 1.5rem;
+        }
+        .footerImg {
+          max-width: 1.5em;
+        }
     }
   }
 }

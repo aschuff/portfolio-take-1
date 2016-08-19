@@ -1,22 +1,89 @@
 @charset "UTF-8";
 @media only screen and (min-device-width: 320px) and (max-device-width: 675px) {
-  .parallax-background #navMenu .account-action {
-    margin: -.75rem 0 0 -4rem; }
-  .parallax-background img#navIcons {
-    max-width: 15%; }
-  .parallax-background li.navList {
-    width: 15%; }
-  .parallax-background .intro-text {
-    font-size: 5em; }
-    .parallax-background .intro-text h2 {
-      font-size: 3.5rem; }
+  div.parallax-background {
+    height: 26em; }
+    div.parallax-background nav#navMenu.menu {
+      height: 16%; }
+    div.parallax-background #navMenu .account-action {
+      margin: -.75rem 0 0 -8rem; }
+      div.parallax-background #navMenu .account-action li.navList {
+        font-size: 1.5em;
+        width: 12%; }
+        div.parallax-background #navMenu .account-action li.navList a #navIcons {
+          max-width: 1em; }
+    div.parallax-background .intro-text {
+      font-size: 4.8em; }
+      div.parallax-background .intro-text h2 {
+        font-size: 3.5rem; }
   div.parallax-content {
     font-size: 14px; }
-    div.parallax-content p {
-      font-size: x-large; }
+    div.parallax-content h2 {
+      font-size: 5em; }
+    div.parallax-content h3 {
+      font-size: 4em;
+      text-align: center;
+      font-weight: bold;
+      color: #0CBBC0; }
+    div.parallax-content p.aboutMe {
+      font-size: 2.8em; }
+    div.parallax-content p.projectDescriptions {
+      font-size: 2.8em; }
+    div.parallax-content .myWork {
+      margin-top: 6%; }
+    div.parallax-content .small-4.columns {
+      width: 98%; }
+      div.parallax-content .small-4.columns #lingo {
+        width: 100%;
+        height: 27em; }
+      div.parallax-content .small-4.columns #gridland {
+        width: 100%;
+        height: 27em; }
+      div.parallax-content .small-4.columns #skate {
+        width: 100%;
+        height: 27em; }
     div.parallax-content div#tech.row ul.medium-block-grid-6 {
       width: 92%;
-      margin-left: 11%; } }
+      margin-left: 13%;
+      margin-top: 5%; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #html5 {
+        max-width: 5em;
+        border-right: none; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #css3 {
+        max-width: 3.7em;
+        border-right: none; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #javascript {
+        max-width: 3.6em;
+        margin-left: 37%; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #sass {
+        max-width: 5em;
+        margin-top: 18%;
+        border-right: none; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #foundation {
+        max-width: 5em;
+        margin-left: 68%;
+        border-right: none; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #bootstrap {
+        max-width: 5em;
+        margin-left: 81%; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #angular {
+        border-right: none;
+        margin-left: 95%;
+        max-width: 5em; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #gulp {
+        border-right: none;
+        max-width: 6em;
+        margin-left: 66%; }
+      div.parallax-content div#tech.row ul.medium-block-grid-6 #node {
+        max-width: 6em;
+        margin-left: 40%; }
+    div.parallax-content .footer {
+      padding: 1rem; }
+      div.parallax-content .footer p.slogan {
+        font-size: 2.5rem; }
+      div.parallax-content .footer p.email {
+        font-size: 1.5rem; }
+      div.parallax-content .footer .footerImg {
+        max-width: 1.5em; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .parallax-background nav#navMenu.menu {
@@ -94,6 +161,8 @@ body * {
     color: #8f9296;
     font-size: 0.875rem;
     margin: 0; }
+  .footer a#resume {
+    color: #0CBBC0; }
   .footer .footerImg {
     max-width: 2%; }
   .footer .links a {
@@ -109,6 +178,11 @@ body * {
       content: "";
       padding: 0 0.4rem 0 0.8rem; }
 
+h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #0CBBC0; }
+
 .image-wrapper {
   width: 100%;
   height: 100%;
@@ -116,7 +190,11 @@ body * {
   overflow: hidden;
   position: relative;
   text-align: center;
-  border-radius: 4px; }
+  border-radius: 4px;
+  border: solid .2em #0CBBC0;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.43); }
 
 .image-overlay-content {
   width: 100%;
@@ -181,109 +259,9 @@ body * {
 .overlay-fade-in:hover .button {
   transition-delay: 0.2s; }
 
-.overlay-slide-in-left img {
-  transition: all 0.3s ease-in-out; }
-
-.overlay-slide-in-left .image-overlay-content {
-  background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);
-  background-color: rgba(0, 0, 0, 0.3);
-  transform: translateX(-110%);
-  opacity: 1;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 0 7px #ccc; }
-
-.overlay-slide-in-left h2 {
-  font-size: 1.8rem;
-  background: rgba(255, 255, 255, 0.7);
-  margin-top: 40%;
-  color: #000;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
-
-.overlay-slide-in-left p {
-  opacity: 0;
-  color: #333;
-  transition: all 0.2s linear; }
-
-.overlay-slide-in-left .button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #000;
-  color: #fff;
-  text-transform: uppercase;
-  box-shadow: 0 0 1px #000;
-  position: relative;
-  border-radius: 7px; }
-  .overlay-slide-in-left .button:hover {
-    background-color: #444; }
-
-.overlay-slide-in-left:hover .image-overlay-content {
-  transform: translateX(0px); }
-
-.overlay-slide-in-left:hover img {
-  transform: translateX(80%);
-  transition-delay: 0.1s; }
-
-.overlay-slide-in-left:hover p {
-  opacity: 1;
-  transition-delay: 0.4s; }
-
-.overlay-fade-in-new-background .button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #000;
-  color: #fff;
-  text-transform: uppercase;
-  border-radius: 5px;
-  box-shadow: 0 0 1px #000;
-  position: relative;
-  opacity: 0;
-  transition: all 0.2s ease-in-out; }
-  .overlay-fade-in-new-background .button:hover {
-    box-shadow: 0 0 5px #fff;
-    background-color: #222; }
-
-.overlay-fade-in-new-background p {
-  font-size: 28px; }
-
-.overlay-fade-in-new-background .image-overlay-content {
-  opacity: 0;
-  background-image: url(http://subtlepatterns.com/patterns/gplaypattern.png);
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: all 0.4s ease-in-out; }
-
-.overlay-fade-in-new-background h2 {
-  color: #000;
-  font-size: 1.6rem;
-  margin-top: 30%;
-  opacity: 0;
-  transition: all 0.2s ease-in-out; }
-
-.overlay-fade-in-new-background p {
-  opacity: 0;
-  transition: all 0.2s linear; }
-
-.overlay-fade-in-new-background img {
-  transition: all 0.2s ease-in-out; }
-
-.overlay-fade-in-new-background:hover img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  filter: gray;
-  -webkit-filter: grayscale(100%);
-  transform: scale(1.5); }
-
-.overlay-fade-in-new-background:hover .image-overlay-content {
-  opacity: 1; }
-
-.overlay-fade-in-new-background:hover h2, .overlay-fade-in-new-background p, .overlay-fade-in-new-background .button {
-  opacity: 1; }
-
-.overlay-fade-in-new-background:hover p {
-  transition-delay: 0.1s; }
-
-.overlay-fade-in-new-background:hover .button {
-  transition-delay: 0.2s; }
+p.projectDescriptions {
+  margin-top: 5%;
+  font-size: 1.2em; }
 
 body {
   font-weight: 200;
@@ -291,7 +269,7 @@ body {
 
 .parallax-background {
   background-image: url("images/workspace3.jpg");
-  height: 620px;
+  height: 23em;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -315,7 +293,9 @@ body {
   padding: 50px;
   font-size: 20px;
   background-color: #fff; }
-  .parallax-content p {
+  .parallax-content p.projectDescription {
+    font-size: xx-large; }
+  .parallax-content p.aboutMe {
     font-size: xx-large; }
   .parallax-content #connect {
     color: #0CBBC0; }
@@ -334,6 +314,8 @@ body {
     margin-bottom: 3%;
     margin-top: 2%; }
     .parallax-content .small-4.columns #lingo {
+      height: 12em; }
+    .parallax-content .small-4.columns #gridland {
       height: 12em; }
     .parallax-content .small-4.columns #skate {
       height: 12em; }

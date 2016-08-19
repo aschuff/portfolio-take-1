@@ -5,13 +5,20 @@
       height: 16%;
     }
     #navMenu .account-action {
-      margin: -.75rem 0 0 -8rem;
+      margin: -.75rem 0 0 0rem;
       li.navList {
         font-size: 1.5em;
         width: 12%;
+
         a {
           #navIcons {
             max-width: 1em;
+          }
+          &#resume {
+            font-size: 1em;
+          }
+          #email {
+            font-size: 1.1em;
           }
         }
       }
@@ -111,11 +118,19 @@
         p.slogan {
             font-size: 2.5rem;
           }
-        p.email {
-          font-size: 1.5rem;
+        p.links {
+          margin-top: 3%;
+        }
+        a {
+          &#resumeFooter {
+            font-size: 1.8rem;
+          }
+          &#emailFooter {
+            font-size: 1.8rem;
+          }
         }
         .footerImg {
-          max-width: 1.5em;
+          max-width: 1.3em;
         }
     }
   }

@@ -5,12 +5,16 @@
     div.parallax-background nav#navMenu.menu {
       height: 16%; }
     div.parallax-background #navMenu .account-action {
-      margin: -.75rem 0 0 -8rem; }
+      margin: -.75rem 0 0 0rem; }
       div.parallax-background #navMenu .account-action li.navList {
         font-size: 1.5em;
         width: 12%; }
         div.parallax-background #navMenu .account-action li.navList a #navIcons {
           max-width: 1em; }
+        div.parallax-background #navMenu .account-action li.navList a#resume {
+          font-size: 1em; }
+        div.parallax-background #navMenu .account-action li.navList a #email {
+          font-size: 1.1em; }
     div.parallax-background .intro-text {
       font-size: 4.8em; }
       div.parallax-background .intro-text h2 {
@@ -80,10 +84,14 @@
       padding: 1rem; }
       div.parallax-content .footer p.slogan {
         font-size: 2.5rem; }
-      div.parallax-content .footer p.email {
-        font-size: 1.5rem; }
+      div.parallax-content .footer p.links {
+        margin-top: 3%; }
+      div.parallax-content .footer a#resumeFooter {
+        font-size: 1.8rem; }
+      div.parallax-content .footer a#emailFooter {
+        font-size: 1.8rem; }
       div.parallax-content .footer .footerImg {
-        max-width: 1.5em; } }
+        max-width: 1.3em; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .parallax-background nav#navMenu.menu {
@@ -126,7 +134,8 @@ body * {
     #navMenu .inline-list li.navList {
       float: none;
       display: inline-block;
-      color: #FFF; }
+      color: #FFF;
+      cursor: pointer; }
       #navMenu .inline-list li.navList a {
         color: #FFF;
         padding-bottom: 0.5rem; }
@@ -141,7 +150,13 @@ body * {
     top: 3%;
     right: 3%; }
   #navMenu .account-action {
-    margin: -.75rem 0 0 5rem; }
+    margin: -.75rem 0 0 1rem; }
+    #navMenu .account-action a#email, #navMenu .account-action a#resume {
+      color: #FFF;
+      font-size: 1.2em; }
+      #navMenu .account-action a#email:hover, #navMenu .account-action a#resume:hover {
+        color: #0CBBC0;
+        transition: all .3s ease-in-out; }
 
 .footer {
   background-color: #292c2f;
@@ -152,31 +167,35 @@ body * {
     color: #0CBBC0;
     font-size: 2.2rem;
     margin: 0 0 1rem; }
-  .footer p.email {
-    color: #0CBBC0;
-    font-size: 1.2rem; }
   .footer p.links {
-    margin-left: 2%; }
-  .footer p.copywrite {
-    color: #8f9296;
-    font-size: 0.875rem;
-    margin: 0; }
-  .footer a#resume {
-    color: #0CBBC0; }
-  .footer .footerImg {
-    max-width: 2%; }
-  .footer .links a {
-    list-style: none;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 0rem 0 1rem;
-    margin: 0; }
-    .footer .links a::after {
-      content: "•";
-      padding: 0 0.4rem 0 0.8rem; }
-    .footer .links a:last-child::after {
-      content: "";
-      padding: 0 0.4rem 0 0.8rem; }
+    margin-left: 2%;
+    margin-top: 2%; }
+
+#emailFooter, #resumeFooter {
+  color: #FFF;
+  font-size: 1.2rem; }
+  #emailFooter:hover, #resumeFooter:hover {
+    color: #0CBBC0;
+    transition: all .3s ease-in-out; }
+
+span {
+  color: #0CBBC0; }
+
+.footerImg {
+  max-width: 2%; }
+
+.links a {
+  list-style: none;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0rem 0 1rem;
+  margin: 0; }
+  .links a::after {
+    content: "•";
+    padding: 0 0.4rem 0 0.8rem; }
+  .links a:last-child::after {
+    content: "";
+    padding: 0 0.4rem 0 0.8rem; }
 
 h3 {
   text-align: center;

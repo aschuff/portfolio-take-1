@@ -21,6 +21,8 @@ $primary-color: #0CBBC0;
       float: none;
       display: inline-block;
       color: #FFF;
+      cursor: pointer;
+
       a {
         color: #FFF;
         padding-bottom: 0.5rem;
@@ -42,7 +44,15 @@ $primary-color: #0CBBC0;
     right: 3%;
   }
   .account-action {
-    margin: -.75rem 0 0 5rem;
+    margin: -.75rem 0 0 1rem;
+    a#email, a#resume {
+      color: #FFF;
+      font-size: 1.2em;
+      &:hover {
+        color: $primary-color;
+        transition: all .3s ease-in-out;
+      }
+    }
   }
 }
 
@@ -58,21 +68,22 @@ $primary-color: #0CBBC0;
       font-size: 2.2rem;
       margin: 0 0 1rem;
     }
-    &.email {
-      color: #0CBBC0;
-      font-size: 1.2rem;
-    }
     &.links {
       margin-left: 2%;
-    }
-    &.copywrite {
-      color: #8f9296;
-      font-size: 0.875rem;
-      margin: 0;
+      margin-top: 2%;
+      }
     }
   }
-  a#resume {
-    color: #0CBBC0;
+  #emailFooter, #resumeFooter {
+    color: #FFF;
+    font-size: 1.2rem;
+    &:hover {
+      color: $primary-color;
+      transition: all .3s ease-in-out;
+    }
+  }
+  span {
+    color: $primary-color;
   }
   .footerImg {
     max-width: 2%;
@@ -90,6 +101,5 @@ $primary-color: #0CBBC0;
     &:last-child::after {
       content: "";
       padding: 0 0.4rem 0 0.8rem;
+      }
     }
-  }
-}

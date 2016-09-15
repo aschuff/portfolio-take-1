@@ -12,7 +12,7 @@ $primary-color: #0CBBC0;
 #navMenu {
   background-color: $background-color;
   padding: 2rem 3rem;
-  height: 12%;
+  height: 16%;
 
   .inline-list {
     text-align: center;
@@ -58,6 +58,7 @@ $primary-color: #0CBBC0;
 
 // FOOTER //
 .footer {
+  // font-family: 'Bungee', cursive;
   background-color: #292c2f;
   text-align: center;
   font-size: 1.2rem;

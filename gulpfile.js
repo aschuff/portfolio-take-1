@@ -2,7 +2,7 @@ var gulp = require('gulp'); // npm install gulp
 var sass = require('gulp-sass'); // npm install gulp-sass
 var watch = require('gulp-watch'); //npm install gulp-watch
 var browserify = require('gulp-browserify') // npm install gulp-browserify
-
+var babel = require('gulp-babel'); // npm install gulp-babel babel-preset-es201
 // SPECIFYING DEPENDENCIES
 gulp.task('default', ['html', 'css'])
 
@@ -21,10 +21,13 @@ gulp.task('html', function () {
         .pipe(gulp.dest('./public'));
 });
 
-//JS
+// JS
 // gulp.task('js', function(){
 //   gulp.src('./js/*.js')
 //     .pipe(browserify())
+//     .pipe(babel({
+//       presets: ['es2015']
+//       }))
 //     .pipe(gulp.dest('./public'))
 // });
 

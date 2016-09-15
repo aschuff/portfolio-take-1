@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Amanda M. Schuff</title>
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Open+Sans" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
@@ -18,16 +19,22 @@
         <nav class="menu" id="navMenu">
             <ul class="inline-list hide-for-small-only account-action">
                 <li class="navList"><a id="resume" href="files/Resume.pdf" target="_blank">Resume</a></li>
-                <li class="navList" ><a href="https://github.com/aschuff" target="_blank"><img id="navIcons" src="images/github.png" alt="" /></a></li>
-                <li class="navList"><a href="https://www.linkedin.com/in/aschuff" target="_blank"><img id="navIcons" src="images/linkedin.png" alt="" /></a></li>
-                <li class="navList"><a href="https://twitter.com/aschuff15" target="_blank"><img id="navIcons" src="images/twitter.png" alt="" /></a></li>
+                <li class="navList">
+                    <a href="https://github.com/aschuff" target="_blank"><img id="navIcons" src="images/github.png" alt="" /></a>
+                </li>
+                <li class="navList">
+                    <a href="https://www.linkedin.com/in/aschuff" target="_blank"><img id="navIcons" src="images/linkedin.png" alt="" /></a>
+                </li>
+                <li class="navList">
+                    <a href="https://twitter.com/aschuff15" target="_blank"><img id="navIcons" src="images/twitter.png" alt="" /></a>
+                </li>
                 <li class="navList"><a id="email" href="mailto:amandaschuff15@gmail.com" target="_blank">Email</a></li>
             </ul>
         </nav>
         <div class="intro-text">
             Amanda M. Schuff
             <br>
-            <h2>Front End Developer</h2>
+            <h2 id="FEDev">Front End Developer</h2>
             <p id="arrow">&#8671;</p>
         </div>
     </div>
@@ -36,7 +43,9 @@
         <div class="about">
             <h2>About Me</h2>
             <p class="aboutMe">
-              I'm passionate about what I do. I love {code}. /Design/ is a lot of fun too. AngularJS is my jam and Foundation is a great framework. Charleston is an awesome city and I'm pumped to make my own contribution to the growing tech community. I'm a go-getter and I believe in getting things done right the first time but I also like having fun while doing it. Check out some of my work and if you'd like to hear more, let's <a id="connect" href="https://www.linkedin.com/in/aschuff" target="_blank">connect</a>.
+                I'm passionate about what I do. I love {code}. /Design/ is a lot of fun too. AngularJS is my jam and Foundation is a great framework. Charleston is an awesome city and I'm pumped to make my own contribution to the growing tech community. I'm a go-getter
+                and I believe in getting things done right the first time but I also like having fun while doing it. Check out some of my work and if you'd like to hear more, let's <a id="connect" href="https://www.linkedin.com/in/aschuff"
+                    target="_blank">connect</a>.
             </p>
             <!-- <p>I have a passion for {code} and /design/. I am loving AngularJS, Foundation, and HTML5/CSS3 but I also have experience with BackboneJS and jQuery. I'm looking to keep breaking ground in the Dev world and I'm excited
                 about the opportunities ahead. If you'd like to hear more, let's <a id="connect" href="https://www.linkedin.com/in/aschuff" target="_blank">connect</a>.</p> -->
@@ -45,54 +54,51 @@
             <h2>Projects</h2>
             <div class="row">
                 <div class="small-4 columns">
-                  <h3>Lingo</h3>
                     <div class="image-wrapper overlay-fade-in">
                         <img id="lingo" src="images/Lingo.jpg" />
                         <div class="image-overlay-content">
                             <h2>Lingo</h2>
                             <p class="projectDescription">
-                              AngularJS & Foundation
+                                AngularJS & Foundation
                             </p>
                             <a href="http://skoorc.com:54646/#/home" class="button" target="_blank">Demo</a>
                         </div>
                     </div>
+                    <h3 id="projectName">Lingo</h3>
                     <p class="projectDescriptions">
-                      Lingo helps users learn a second language by reading the news. Lingo gives users partially translated news articles based on selected preferences. Users can choose between French or Spanish and set topics they'd like to read about.
+                        Lingo helps users learn a second language by reading the news. Lingo gives users partially translated news articles based on selected preferences. Users can choose between French or Spanish and set topics they'd like to read about.
                     </p>
                 </div>
                 <div class="small-4 columns">
-                  <h3>Adventures in Gridland</h3>
                     <div class="image-wrapper overlay-fade-in">
                         <img id="gridland" src="images/gridland2.png" />
                         <div class="image-overlay-content">
                             <h2>Gridland</h2>
                             <p class="projectDescription">
-                              BackboneJS & Gulp
+                                BackboneJS & Gulp
                             </p>
                             <a href="https://learned-beginner.surge.sh/" class="button" target="_blank">Demo</a>
                         </div>
                     </div>
+                    <h3 id="projectName">Adventures in Gridland</h3>
                     <p class="projectDescriptions">
-                      Built using BackboneJS, Adventures in Gridland is
-                      a “Snake” inspired grid game. Users can choose a character and have fun moving around the grid.
+                        Built using BackboneJS, Adventures in Gridland is a “Snake” inspired grid game. Users can choose a character and have fun moving around the grid.
                     </p>
                 </div>
                 <div class="small-4 columns">
-                  <h3>Sk8Site</h3>
                     <div class="image-wrapper overlay-fade-in">
                         <img id="skate" src="images/SkateSite2.png" />
                         <div class="image-overlay-content">
                             <h2>Sk8Site</h2>
                             <p class="projectDescription">
-                              HTML5 & CSS3
+                                HTML5 & CSS3
                             </p>
                             <a href="https://dramatic-invention.surge.sh" class="button" target="_blank">Demo</a>
                         </div>
                     </div>
+                    <h3 id="projectName">Sk8Site</h3>
                     <p class="projectDescriptions">
-                      This is a great example of how a mockup from Photoshop can be
-                      brought to life. Using HTML5 and CSS3/SASS, this site is an example how an
-                      image can become a web page.
+                        This is a great example of how a mockup from Photoshop can be brought to life. Using HTML5 and CSS3/SASS, this site is an example how an image can become a web page.
                     </p>
                 </div>
             </div>
@@ -112,22 +118,60 @@
                 <li><img class="techIcons" id="node" src="images/node.png" alt="" /></li>
             </ul>
         </div>
-
-    <footer class="footer">
         <div class="row">
-            <div class="small-12 columns">
-                <p class="slogan">Amanda M. Schuff</p>
-                <a id="resumeFooter" href="files/Resume.pdf" target="_blank">Resume</a>
-                <span> | </span>
-                <a id="emailFooter" href="mailto:amandaschuff15@gmail.com" target="_blank">Email</a></li>
-                <p class="links">
-                    <a href="https://github.com/aschuff" target="_blank"><img class="footerImg" src="images/github.png" alt="" /></i></a>
-                    <a href="https://www.linkedin.com/in/aschuff" target="_blank"><img class="footerImg" src="images/linkedin.png" alt="" /></i></a>
-                    <a href="https://twitter.com/aschuff15" target="_blank"><img class="footerImg" src="images/twitter.png" alt="" /></i></a>
-                </p>
-            </div>
+          <h1>FAQ</h1>
+        <div class="accordion">
+            <section class="accordion-item">
+                <h4>What's your background?</h4>
+                <div class="accordion-item-content">
+                    <p>I have a background in Art Education. I taught elementary Art for 3 years.</p>
+                </div>
+            </section>
+            <section class="accordion-item">
+                <h4>Why code?</h4>
+                <div class="accordion-item-content">
+                    <p>I love the challenge. It's like a big puzzle that needs solving and there are a thousand pieces. I'm a very logical and strategic type of person so to me learning to code was a perfect next step.</p>
+                </div>
+            </section>
+            <section class="accordion-item">
+                <h4>What type of opportunities are you looking for?</h4>
+                <div class="accordion-item-content">
+                    <p>I am currently seeking a junior level front end developer position for an innovative and exciting company, big or small. I'm well versed in HTML/CSS and AngularJS and I'm always looking to keep learning more all the time.</p>
+                </div>
+            </section>
+            <section class="accordion-item">
+                <h4>What are you currently working on?</h4>
+                <div class="accordion-item-content">
+                    <p>I am an independent contractor for TEKsystems so from time to time I assist other companies with servies as needed. I am also working on a freelance project for a local non-profit organization called Women In Tech 101. Lastly, I am staying sharp by learning new (to me) technologies such as ReactJS and PHP.</p>
+                </div>
+            </section>
+            <section class="accordion-item">
+                <h4>What are your interests outside of Dev?</h4>
+                <div class="accordion-item-content">
+                    <p>I consider myself to be a pretty chill person so in my spare time that's what I like to do. I love spending time with my husband, Todd and my two cats, Teddy and Lily. I enjoy a nice beverage now and then and like to watch college football (go gamecocks!) in the fall.</p>
+                </div>
+            </section>
         </div>
-    </footer>
+      </div>
+
+        <footer class="footer">
+            <div class="row">
+                <div class="small-12 columns">
+                    <p class="slogan">Amanda M. Schuff</p>
+                    <a id="resumeFooter" href="files/Resume.pdf" target="_blank">Resume</a>
+                    <span> | </span>
+                    <a id="emailFooter" href="mailto:amandaschuff15@gmail.com" target="_blank">Email</a></li>
+                    <p class="links">
+                        <a href="https://github.com/aschuff" target="_blank"><img class="footerImg" src="images/github.png" alt="" /></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aschuff" target="_blank"><img class="footerImg" src="images/linkedin.png" alt="" /></i>
+                        </a>
+                        <a href="https://twitter.com/aschuff15" target="_blank"><img class="footerImg" src="images/twitter.png" alt="" /></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>

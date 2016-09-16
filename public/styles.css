@@ -404,4 +404,5 @@ body {
     .parallax-content .accordion .accordion-item {
       border-bottom: 1px solid #0CBBC0;
       padding: 1em;
-      color: #292c2f; }
+      color: #292c2f;
+      font-size: 1em; }
